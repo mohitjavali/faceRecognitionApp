@@ -6,24 +6,24 @@ from deepface import DeepFace
 import cv2 
 import numpy as np
 
-# # Function to detect faces using FaceNet
-# def detect_faces_facenet(input_folder, output_folder):
-#     mtcnn = MTCNN(keep_all=True, device='cuda' if torch.cuda.is_available() else 'cpu')
+# Function to detect faces using FaceNet
+def detect_faces_facenet(input_folder, output_folder):
+    mtcnn = MTCNN(keep_all=True, device='cuda' if torch.cuda.is_available() else 'cpu')
     
-#     for filename in os.listdir(input_folder):
-#         if filename.endswith(".jpg") or filename.endswith(".png"):
-#             img_path = os.path.join(input_folder, filename)
-#             img = Image.open(img_path)
+    for filename in os.listdir(input_folder):
+        if filename.endswith(".jpg") or filename.endswith(".png"):
+            img_path = os.path.join(input_folder, filename)
+            img = Image.open(img_path)
             
-#             # Detect faces
-#             boxes, _ = mtcnn.detect(img)
+            # Detect faces
+            boxes, _ = mtcnn.detect(img)
             
-#             if boxes is not None:
-#                 for i, box in enumerate(boxes):
-#                     face = img.crop(box)
-#                     face = face.resize((112, 112))  # Use default resampling method (antialiased)
-#                     output_path = os.path.join(output_folder, f"{os.path.splitext(filename)[0]}_{i}.jpg")
-#                     face.save(output_path)
+            if boxes is not None:
+                for i, box in enumerate(boxes):
+                    face = img.crop(box)
+                    face = face.resize((112, 112))  # Use default resampling method (antialiased)
+                    output_path = os.path.join(output_folder, f"{os.path.splitext(filename)[0]}_{i}.jpg")
+                    face.save(output_path)
 
 # Function to detect faces using DeepFace
 # def detect_faces_deepface(input_folder, output_folder):
