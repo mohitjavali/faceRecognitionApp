@@ -11,4 +11,4 @@ Observations:
 (i) Facenet and Deepface has given me equal accuracy in Face Detection task. Performance wise both are almost same.
 (ii) Facenet is faster than Deepface because Facenet is a lighter model, hence face detected output's resolution is almost half of deepface's face detected output's resolution.
 
-Inference: I will choosing Facenet as my Face Detector for further process of this project.
+Inference: I will be choosing Facenet as my Face Detector for further process of this project.
