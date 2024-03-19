@@ -2,9 +2,9 @@
 ## Task: 
 Build a Streamlit App where given a query face image, app should search, recommend and display similar faces in the database.
 <br>
-Input: Upload any face image among the 105 actors in the internet or test_dataset(which is completely different from training and validation dataset) or video where these 105 actors are present.
+**Input:** Upload any face image among the 105 actors in the internet or test_dataset(which is completely different from training and validation dataset) or video where these 105 actors are present.
 <br>
-Output: If input is an image, identify the person among 105 classes(or actors) and also display all the similar faces available in the dataset with paths; otherwise tell that the person does not exist in the database. If the input is video, among multiple frames, select the one best frame of a person and identify the person among 105 classes(or actors) and also display all the similar faces available in the dataset with paths; otherwise tell that the person does not exist in the database.
+**Output:** If input is an image, identify the person among 105 classes(or actors) and also display all the similar faces available in the dataset with paths; otherwise tell that the person does not exist in the database. If the input is video, among multiple frames, select the one best frame of a person and identify the person among 105 classes(or actors) and also display all the similar faces available in the dataset with paths; otherwise tell that the person does not exist in the database.
 <br>
 ## Process: 
 #### 1. Dataset
