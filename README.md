@@ -8,7 +8,7 @@ Given an input folder with loosely cropped face images, take each image and dete
 
 ## Functioning: 
 For each face image, I wanted to detect the face, then calculate the centre ie (centre_x, centre_y) of the face detected region, then find the maximum of between the width and height of the face detected region ie max_dim=max(w, h). I want to get the output image as a square image with dimension (max_dim*max_dim) by:<br>
-(i)If the max_dim=w, extend the height equally from top and bottom or <br>
+(i) If the max_dim=w, extend the height equally from top and bottom or <br>
 (ii) If the max_dim=h, extend the height equally from left and right; and do black padding if the measurements go beyond 0 or image.shape so that we maintain the same centre ie (centre_x, centre_y) of face detected region for our output image. Then resize the output image to (112\*112) for standardization.
 
 ## Observations:
